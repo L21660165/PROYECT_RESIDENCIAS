@@ -1,20 +1,31 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware("guest")->group(function(){
+    Route::match(['get', 'post'], '/',[AuthController::class, 'index'])->name('login');
+    Route::get('/registro',[AuthController::class, 'registro'])->name('registro');  
+    Route::post('/registrar',[AuthController::class, 'registrar'])->name('registrar');
+    Route::get('/forgot-password',[AuthController::class, 'forgot_password'])->name('forgot-password');
+    Route::get('/ayuda',[AuthController::class, 'ayuda'])->name('ayuda');
+    Route::post('/logear',[AuthController::class, 'logear'])->name('logear');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+Route::middleware("auth")->group(function(){
+    Route::get('/home',[AuthController::class, 'home'])->name('home');
+    Route::post('/logout',[AuthController::class, 'logout'])->name('logout');
 });
 
-require __DIR__.'/auth.php';
+use App\Http\Middleware\RoleMiddleware;
+
+// Ruta para administradores
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+})->middleware([RoleMiddleware::class . ':admin']);
+
+// Ruta para usuarios regulares
+Route::get('/user', function () {
+    return view('user.dashboard');
+})->middleware([RoleMiddleware::class . ':user']);

@@ -1,0 +1,141 @@
+body {
+    background-image: url('/imagenes/fondo.png'); 
+    background-size: 40%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #2E0B98;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Jacques Francois', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47.48px;
+    margin-bottom: 20px;
+    width: 120%;
+    border-radius: 10px;
+}
+
+.header .header-text {
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; 
+    height: 100%; 
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px; 
+    font-size: 18px; 
+    margin-top: -15px;
+}
+
+.navbar .active {
+    background-color: #FBBE23;
+    padding: 15px 20px; 
+    border-radius: 10px;
+    margin-top: -15px;
+}
+
+.navbar img {
+    width: 40px;
+    height: 40px;
+}
+
+.login-container {
+    max-width: 390px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #D9D9D9D6; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-form {
+    padding: 20px;
+    text-align: left;
+}
+
+.form-label {
+    color: #A09595;
+}
+
+.login-form input {
+    padding-left: 40px; 
+    height: 45px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+}
+
+.login-form .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A09595;
+    font-size: 18px; 
+    pointer-events: none;
+}
+
+.login-container a {
+    color: #0C13EC;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+.icon-container {
+    position: relative;
+}
+
+.mt-3 {
+    text-align: center;
+}
+
+.mt-3 a {
+    display: inline-block;
+    margin: 5px;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+}
+
+.header-white {
+    background-color: white;
+    color: black;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
