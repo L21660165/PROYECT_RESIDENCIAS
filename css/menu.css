@@ -1,0 +1,70 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('/imagenes/fondo.png'); 
+    background-size: 40%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+}
+
+.menu {
+    position: fixed;
+    top: 66px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #e9e8ec;
+    color: rgb(0, 0, 0);
+    transition: left 0.3s ease;
+    padding-top: 60px; 
+    z-index: 1;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu .user-section {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .user-section i {
+    margin-right: 10px;
+}
+
+.menu .stats-section {
+    padding: 10px 20px;
+}
+
+.menu .logout {
+    padding: 10px 20px;
+    color: #FF0000;
+    cursor: pointer;
+}

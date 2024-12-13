@@ -1,0 +1,201 @@
+.blue-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px; /* Separar un poco de la parte izquierda */
+    margin-right: 20px; /* Separar un poco de la parte derecha */
+}
+
+.blue-box {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Efecto difuminado en color azul */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Tamaño uniforme */
+    text-align: center; /* Centrar el contenido */
+    position: relative; /* Para la etiqueta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más profesional */
+}
+
+.blue-box-content {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Fondo azul con efecto difuminado */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center; /* Centrar el contenido */
+    position: relative; /* Para la etiqueta */
+}
+
+.blue-box-content p {
+    margin: 5px 0;
+}
+
+.blue-box-content .empresa {
+    color: white;
+}
+
+.blue-box-content .revision,
+.blue-box-content .maestro {
+    color: red;
+}
+
+.blue-box-content .fecha,
+.blue-box-content .proyecto {
+    color: orange;
+}
+
+.blue-box-content .publicacion {
+    color: yellow;
+}
+
+.blue-box-content .propuesta,
+.blue-box-content .alumno {
+    color: green;
+}
+
+.blue-box-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blue-box-content .btn-report {
+    background-color: #00BFFF; /* Azul celeste */
+    color: white;
+}
+
+.blue-box-content .btn-email {
+    background-color: orange;
+    color: white;
+}
+
+.blue-box-content .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.blue-box-content .icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.blue-box-content .icon-check {
+    color: green;
+}
+
+.blue-box-content .icon-cross {
+    color: red;
+}
+
+.label-gestion {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(-45deg); /* Rotar la etiqueta en diagonal */
+    transform-origin: 0 0; /* Ajustar el punto de origen de la rotación */
+    margin-top: 3px; 
+    margin-left: -40px;
+}
+
+.etapas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.etapas div {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%; /* Tamaño uniforme para cada etapa */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un diseño más profesional */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    font-size: 12px;
+}
+
+.etapas div:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón por encima */
+}
+
+.etapas .active {
+    background-color: blue;
+}
+
+.etapas .completed {
+    background-color: green;
+}
+
+.finalizado {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reject-box {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más profesional */
+    text-align: center; /* Centrar el contenido */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 300px; /* Tamaño uniforme */
+}
+
+.reject-box.active {
+    display: block;
+}
+
+.reject-box h2 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reject-box p {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.reject-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.reject-box .btn-save {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}

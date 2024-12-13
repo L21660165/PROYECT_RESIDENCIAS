@@ -1,0 +1,36 @@
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.btn-custom {
+    background-color: #0C13EC; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease; 
+   
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; 
+}
+
+.login-link {
+    color: #0C13EC; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s ease; 
+}
+
+.login-link:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
