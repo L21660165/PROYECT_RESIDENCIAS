@@ -1,0 +1,259 @@
+.search-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #FBBE23;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.residencias-rectangle {
+    position: fixed;
+    top: 80px;
+    left: 100px;  
+    padding: 10px 20px;
+    background-color: #5168FF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.residencias-rectangle i {
+    margin-right: 10px;
+}
+
+
+.divider {
+    position: fixed;
+    top: 150px; 
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000000;
+}
+
+/* Botones horizontales */
+.status-buttons {
+    position: fixed;
+    justify-content: center;
+    top: 170px;
+    left: 100px;
+    display: flex;
+    gap: 300px;
+}
+
+.status-button {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.status-button.selected {
+    background-color: #007BFF;
+    color: white;
+}
+
+.project-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.project-status div {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-status #enRevision {
+    margin-left: 10px; /* Separar un poco de la parte izquierda */
+}
+
+.project-status #proyectosFinalizados {
+    margin-right: 10px; /* Separar un poco de la parte derecha */
+}
+
+.project-status .active {
+    background-color: #2E0B98;
+}
+
+.blue-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px; /* Separar un poco de la parte izquierda */
+    margin-right: 20px; /* Separar un poco de la parte derecha */
+}
+
+.blue-box {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Efecto difuminado en color azul */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Tamaño uniforme */
+    text-align: center; /* Centrar el contenido */
+    position: relative; /* Para la etiqueta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más profesional */
+}
+
+.blue-box-content {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Fondo azul con efecto difuminado */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center; /* Centrar el contenido */
+    position: relative; /* Para la etiqueta */
+}
+
+.blue-box-content p {
+    margin: 5px 0;
+}
+
+.blue-box-content .empresa {
+    color: white;
+}
+
+.blue-box-content .revision,
+.blue-box-content .maestro {
+    color: blue;
+}
+
+.blue-box-content .fecha,
+.blue-box-content .proyecto {
+    color: orange;
+}
+
+.blue-box-content .publicacion {
+    color: yellow;
+}
+
+.blue-box-content .propuesta,
+.blue-box-content .alumno {
+    color: green;
+}
+
+.blue-box-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blue-box-content .btn-report {
+    background-color: #00BFFF; /* Azul celeste */
+    color: white;
+}
+
+.blue-box-content .btn-email {
+    background-color: orange;
+    color: white;
+}
+
+.blue-box-content .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.blue-box-content .icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.blue-box-content .icon-check {
+    color: green;
+}
+
+.blue-box-content .icon-cross {
+    color: red;
+}
+
+.label-gestion {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(-45deg); /* Rotar la etiqueta en diagonal */
+    transform-origin: 0 0; /* Ajustar el punto de origen de la rotación */
+}
+
+.etapas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.etapas div {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%; /* Tamaño uniforme para cada etapa */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un diseño más profesional */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    font-size: 12px;
+}
+
+.etapas div:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón por encima */
+}
+
+.etapas .active {
+    background-color: blue;
+}
+
+.etapas .completed {
+    background-color: green;
+}
+
+.finalizado {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+.content-box.active {
+    display: block;
+}
+
